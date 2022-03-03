@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice Tally Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Simulate 10x Power Up Button -->
+    <div class="power-ups">
+        <label class="power-ups-check">10x Mode
+            <input type="checkbox" id="multiplyClicked" onclick="multiply()">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="container">
+
+        <!-- Total Tally's Container -->
+        <div class ="tallys">
+            <p id="leftTotal"></p>
+            <span></span>
+            <p id="rightTotal"></p>
+        </div>
+
+        <!-- Dice Images -->
+        <div class="dice-wrapper">
+            <img  id="die-1">
+            <img  id="die-2">
+        </div>
+
+        <!-- Number Rolled -->
+        <div class="float-container">
+            <p id="leftRolledNum"></p>
+            <p id="rightRolledNum"></p>
+        </div>
+
+        <!-- Button Container -->
+        <div class="buttons">
+            <button onclick="dieRoll_One()">Roll Die</button>
+            <button onclick="dieRoll_Two()">Roll Die</button>
+        </div>
+    </div>
+
+    <!-- Import JS Script -->
+    <script src="main.js"></script>
+</body>
+</html>

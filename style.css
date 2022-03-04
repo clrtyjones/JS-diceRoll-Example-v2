@@ -4,15 +4,17 @@
     box-sizing: border-box;
 }
 body{
-    height: 90vh;
+    height: 100%;
+    margin: 0;
     background: linear-gradient(
         #ffffff,
         #242424
     ) 0 100% no-repeat;
-    background-size: 100% 40%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .container{
-    width: 700px;
+    width: 500px;
     padding: 50px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -27,10 +29,9 @@ body{
     text-align: center;
 }
 .dice-wrapper{
-    width: 69%;
+    width: 60%;
+    margin-left: 19%;
     display: flex;
-    align-items: center;
-    margin: 0 auto;
     justify-content: space-between;
 }
 .tallys{
@@ -92,7 +93,7 @@ button{
         transform: rotate(8deg);
     }
 }
-#leftRolledNum {
+#rolledNum {
     display: inline;
     margin-left: 40px;
     margin-top: 20px;
@@ -102,7 +103,7 @@ button{
     opacity: 0;
     transition: 1s;
 }
-#leftRolledNum.fade-in {
+#rolledNum.fade-in {
     opacity: 1;
     transition: 1s;
 }

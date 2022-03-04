@@ -15,10 +15,10 @@ body{
 }
 .container{
     width: 500px;
-    padding: 50px;
+    padding: 40px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 70%;
+    top: 65%;
     left: 50%;
     background-color: #ffffff;
     box-shadow: 0 15px 25px rgba(50,50,50,0.15);
@@ -31,9 +31,12 @@ body{
 .dice-wrapper{
     width: 60%;
     margin-left: 19%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
 }
+
+/* Total Vote Amounts */
 .tallys{
     font-size: 16px;
     margin-left: 20%;
@@ -46,6 +49,8 @@ body{
     padding: 1px 0;
     text-align: center;
 }
+
+/* Not Sure If Needed */
 .adding{
     font-size: 16px;
     font-weight: 500;
@@ -64,21 +69,22 @@ button{
     outline: none;
     color: #ffffff;
     padding: 15px 0;
-    width: 140px;
+    width: 170px;
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 0%;
-
+    margin-top: 5%;
 }
 .power-ups {
     text-align: center;
     margin-top: 5%;
     font-family: "Poppins",sans-serif;
 }
+
+/* Dice Image Shake Behavior */
 .shake{
     animation: shake 0.5s infinite;
 }
@@ -93,31 +99,19 @@ button{
         transform: rotate(8deg);
     }
 }
+
+/* Fading In Display Amount */
 #rolledNum {
+    font-size: 16px;
+    font-weight: 500;
     display: inline;
-    margin-left: 40px;
-    margin-top: 20px;
+    padding: 1px 0;
     width: 150px;
-    height: 80px;
-    float: left;
+    text-align: center;
     opacity: 0;
     transition: 1s;
 }
 #rolledNum.fade-in {
-    opacity: 1;
-    transition: 1s;
-}
-#rightRolledNum {
-    display: inline;
-    margin-left: 25px;
-    margin-top: 20px;
-    width: 150px;
-    height: 80px;
-    float: left;
-    opacity: 0;
-    transition: 1s;
-}
-#rightRolledNum.fade-in {
     opacity: 1;
     transition: 1s;
 }

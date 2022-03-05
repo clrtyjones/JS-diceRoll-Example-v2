@@ -6,6 +6,16 @@ let images = ["./src_images/dice-01.svg",
 "./src_images/dice-05.svg",
 "./src_images/dice-06.svg"];
 
+// Import NFT Images -> Array
+let nftImage = ["./nft_examples/apeExample.jpg",
+"./nft_examples/dipExample.png",
+"./nft_examples/friendsExample.gif",
+"./nft_examples/hape2Example.png",
+"./nft_examples/palExample.png",
+"./nft_examples/punkExample.jpg",
+"./nft_examples/takashiExample.png",
+"./nft_examples/hapeExample.png"];
+
 // ID's For Query
 let leftDie = document.querySelectorAll("#die-1");
 let rightDie = document.querySelectorAll("#die-2");
@@ -35,6 +45,9 @@ document.querySelector("#rightTotal").innerHTML = "Total: <br>" + rightValue;
 // - needed for formatting.
 document.querySelector("#rolledNum").innerHTML = "Added 0!";
 
+// Display Random Comptetitor NFT's
+document.querySelector("#left-nft").setAttribute("src", nftImage[Math.floor(Math.random()*8)]);
+document.querySelector("#right-nft").setAttribute("src", nftImage[Math.floor(Math.random()*8)]);
 
 /*
 *   Multiply Function - Applies A 10x Multiplier To The Added Value.

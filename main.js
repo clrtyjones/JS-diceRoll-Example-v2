@@ -46,8 +46,21 @@ document.querySelector("#rightTotal").innerHTML = "Total: <br>" + rightValue;
 document.querySelector("#rolledNum").innerHTML = "Added 0!";
 
 // Display Random Comptetitor NFT's
-document.querySelector("#left-nft").setAttribute("src", nftImage[Math.floor(Math.random()*8)]);
-document.querySelector("#right-nft").setAttribute("src", nftImage[Math.floor(Math.random()*8)]);
+function displayNFTs() {
+
+    // Base Case - No Pairs
+    if (document.querySelector("#left-nft").getAttribute() == nftImage[1]) {
+        console.log("YOOOOO");
+
+    }
+
+    // Generate Random Pair
+    document.querySelector("#left-nft").setAttribute("src", nftImage[Math.floor(Math.random()*8)]);
+    document.querySelector("#right-nft").setAttribute("src", nftImage[Math.floor(Math.random()*8)]);
+
+    // Check For Duplicates
+}
+displayNFTs();
 
 /*
 *   Multiply Function - Applies A 10x Multiplier To The Added Value.

@@ -18,6 +18,9 @@ let rightValue = 0;
 let leftVote = false;
 let rightVote = false;
 
+// Audio
+let roll = new Audio("./audio/diceRollAudio.mp3");
+
 // Default Left Die
 // - startup value = 0
 document.querySelector("#die-1").setAttribute("src", images[Math.floor(Math.random()*6)]);
@@ -57,6 +60,10 @@ function multiply()
 */
 function diceRoll() 
 {
+    // Play Audio Cue
+    roll.play();
+    roll.currentTime = 0;
+
     // Add Shake To Left + Right Die
     leftDie.forEach(function(die){
         die.classList.add("shake");

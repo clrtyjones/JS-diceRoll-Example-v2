@@ -9,14 +9,6 @@
 
 <body>
 
-    <!-- Simulate 10x Power Up Button -->
-    <div class="power-ups">
-        <label class="power-ups-check">Left Vote
-            <input type="checkbox" id="leftVote" onclick="multiply()">
-            <span class="checkmark"></span>
-        </label>
-    </div>
-
     <!-- NFT Example Images -->
     <div class="nft-wrapper">
         <img  id="left-nft">
@@ -27,6 +19,18 @@
     <div class ="tallys">
         <p id="leftTotal"></p>
         <p id="rightTotal"></p>
+    </div>
+
+    <!-- User Vote Selection -->
+    <div class="vote-selection">
+            <input type="radio" name="select" id="leftVote" value="left" checked>
+            <input type="radio" name="select" id="rightVote" value="right">
+            <label for="leftVote" class="option leftVote">
+                <span>&emsp;&nbsp;Eazy E</span>
+            </label>
+            <label for="rightVote" class="option rightVote">
+                <span>Don Toretto</span>
+            </label>
     </div>
 
     <!-- Menu Container -->

@@ -1,4 +1,4 @@
-# Welcome to Dice Roll [Example] V2 !
+# Dice Roll [Example] V2 - Try The [Example Here](https://clrtyjones.github.io/diceRollExample-v2) ! 
 
 
 ## 📝 - Description

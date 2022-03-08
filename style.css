@@ -5,14 +5,16 @@
 }
 body{
     height: 100%;
+    width: 100%;
     margin: 0;
     background: linear-gradient(
         #ffffff,
         #242424
     ) 0 100% no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: auto auto;
 }
+
 
 /* NFT Images */
 .nft-wrapper{
@@ -24,12 +26,10 @@ body{
 #left-nft{
     margin-right: 5%;
     height: 360px;
-    max-width: 100%;
 }
 #right-nft{
     margin-left: 5%;
     height: 360px;
-    max-width: 100%;
 }
 
 /* Total Vote Amounts */
@@ -136,19 +136,19 @@ input[type="radio"]{
 }
 .vote-selection{
     display: inline-flex;
-    transform: translate(8%, -20%);
+    transform: translate(0%, -20%);
+    margin-left: 31.5%;
     height: 80px;
-    width: 585px;
+    width: auto;
     align-items: center;
-    justify-content: space-between;
     border-radius: 5px;
     padding: 20px 15px;
-    margin-left: 28%;
 }
 .vote-selection .option{
     background: #fff;
     height: 100%;
-    width: 100%;
+    width: 110px;
+    margin-left: auto;
     display: flex;
     align-items: center;
     text-align: center;
@@ -159,7 +159,9 @@ input[type="radio"]{
 }
 #leftVote ~ .leftVote{
     text-align: center;
-    margin-right: 55%;
+}
+#rightVote ~ .rightVote{
+    margin-left: 320px;
 }
 #leftVote:checked:checked ~ .leftVote,
 #rightVote:checked:checked ~ .rightVote{
@@ -167,7 +169,7 @@ input[type="radio"]{
     background: #303030;
 }
 .vote-selection .option span{
-    font-size: 1vw;
+    font-size: 15px;
     text-align: center;
     margin-left: 10%;
     font-family: "Poppins",sans-serif;
@@ -193,4 +195,59 @@ input[type="radio"]{
 #rolledNum.fade-in {
     opacity: 1;
     transition: 1s;
+}
+
+/* Mobile Formatting */
+@media only screen and (max-width: 700px) {
+
+    /* NFT Image Scaling */
+    #left-nft, #right-nft{
+        margin-top: 13%;
+        height: 50vw;
+    }
+
+    /* Tally's Scaling */
+    #leftTotal{
+        margin-right: 25%;
+        font-size: 15px;
+    }
+    #rightTotal{
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    /* Vote Selection Scaling */
+    .vote-selection{
+        margin-left: 7.5%;
+        height: 80px;
+        width: auto;
+    }
+    .vote-selection .option{
+        height: 85%;
+        width: 110px;
+        margin-left: auto;
+    }
+    #rightVote ~ .rightVote{
+        margin-left: 82px;
+    }
+
+    /* Container Menu Scaling */
+    .container{
+        width: 300px;
+        padding: 15px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 79%;
+        left: 50%;
+    }
+
+    /* Dice Images Scaling */
+    #die-1, #die-2{
+        height: 85px;
+    }
+
+    /* Rolled Num Scaling */
+    #rolledNum {
+        font-size: 14px;
+    }
 }

@@ -68,6 +68,8 @@ function multiply()
 */
 function diceRoll() 
 {
+    console.log(window.innerWidth);
+    
     // Play Audio Cue
     roll.play();
     roll.currentTime = 0;

@@ -24,10 +24,12 @@ body{
 #left-nft{
     margin-right: 5%;
     height: 360px;
+    max-width: 100%;
 }
 #right-nft{
     margin-left: 5%;
     height: 360px;
+    max-width: 100%;
 }
 
 /* Total Vote Amounts */
@@ -165,7 +167,7 @@ input[type="radio"]{
     background: #303030;
 }
 .vote-selection .option span{
-    font-size: 17px;
+    font-size: 1vw;
     text-align: center;
     margin-left: 10%;
     font-family: "Poppins",sans-serif;

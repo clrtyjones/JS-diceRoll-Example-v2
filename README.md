@@ -1,4 +1,4 @@
-# Welcome to Dice Roll Tally [Example] !
+# Welcome to Dice Roll [Example] V2 !
 
 
 ## 📝 - Description

@@ -4,11 +4,11 @@
 ## 📝 - Description
 ***Code Inspired From [CodingArtistWeb](https://codingartistweb.com/2021/04/roll-the-dice-javascript-dice-roll/)***
 
-This fun side project example demonstrates the simulation of a Dice Roll between two sides, with a Die configured for each side. The user can select which Die they would like to roll, which generates a random number (1-6). This amount then gets added onto the corresponding side, totalling the sum. When the user checkmarks the *10x Mode*, it simulates the user having a power up, which multiplies each Dice Roll value earned by 10.
+V2.0 From previous Dice Roll Example.
 
 🔧 - JS, CSS + HTML
 
-## 🔍 - Examples
+## 🔍 - Examples (From V1.0)
 
 &emsp; &emsp; &emsp; &emsp; &emsp; ***Dice Roll Example:*** &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ***10x Power Up Example:***
 
